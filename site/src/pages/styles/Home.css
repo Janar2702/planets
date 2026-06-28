@@ -13,7 +13,7 @@ body{
     padding: 30px;
     background:#464335;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 162, 255, 0.4);
+    box-shadow: 0 0 20px #3553E9;
 }
 
 .home h1{
