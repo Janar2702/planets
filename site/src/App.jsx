@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import Planets from './pages/Planets'
 import About from './pages/About'
-
+import Home  from './pages/Home'
+import Navbar from './components/Navbar'
 import './App.css'
 
 function App() {
