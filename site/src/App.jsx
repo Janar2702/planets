@@ -4,6 +4,7 @@ import Planets from './pages/Planets'
 import About from './pages/About'
 import Home  from './pages/Home'
 import Navbar from './components/Navbar'
+import Quiz from './pages/Test'
 import './App.css'
 
 function App() {
