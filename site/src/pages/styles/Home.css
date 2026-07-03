@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0E2181;
+    color: white;
+}
+
+.home{
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 30px;
+    background:#464335;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #3553E9;
+}
+
+.home h1{
+    color: #7fd8ff;
+    font-size: 40px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px #4763EB;
+}
+
+.home p{
+    font-size: 20px;
+    line-height: 1.8;
+    color: beige;
+    margin-bottom: 20px;
+}
+
+.home img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    margin-top: 25px;
+    box-shadow: 0 0 25px #4763EB;
+    transition: transform 0.5s;
+}
+
+.home img:hover{
+    transform: scale(1.5);
+}

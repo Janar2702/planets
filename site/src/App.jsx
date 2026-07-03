@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import React, { useState } from 'react'
 import Planets from './pages/Planets'
 import About from './pages/About'
@@ -9,7 +10,9 @@ function App() {
   const [currentPage, setCurrentPage] = useState('planets')
 
   return (
-    <div className="app-wrapper">
+
+    <>
+     <div className="app-wrapper">
       <nav className="main-nav">
         <button 
           className={currentPage === 'planets' ? 'active-nav-btn' : ''} 
@@ -30,6 +33,10 @@ function App() {
         {currentPage === 'about' && <About />}
       </main>
     </div>
+ 
+    </>
+
+    
   )
 }
 
