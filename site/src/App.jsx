@@ -1,36 +1,54 @@
-import React, { useState } from 'react'
-import Planets from './pages/Planets'
-import About from './pages/About'
-import Home from './pages/Home'
-import Navbar from './components/Navbar'
-import './App.css'
+
+import React, { useState } from "react";
+import Home from "./pages/Home";
+import Planets from "./pages/Planets";
+import About from "./pages/About";
+import Quiz from "./pages/Test";
+import "./App.css";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('planets')
+  const [currentPage, setCurrentPage] = useState("home");
 
   return (
     <div className="app-wrapper">
       <nav className="main-nav">
-        <button 
-          className={currentPage === 'planets' ? 'active-nav-btn' : ''} 
-          onClick={() => setCurrentPage('planets')}
+        <button
+          className={currentPage === "home" ? "active-nav-btn" : ""}
+          onClick={() => setCurrentPage("home")}
+        >
+          Главная
+        </button>
+
+        <button
+          className={currentPage === "planets" ? "active-nav-btn" : ""}
+          onClick={() => setCurrentPage("planets")}
         >
           Каталог планет
         </button>
-        <button 
-          className={currentPage === 'about' ? 'active-nav-btn' : ''} 
-          onClick={() => setCurrentPage('about')}
+
+        <button
+          className={currentPage === "about" ? "active-nav-btn" : ""}
+          onClick={() => setCurrentPage("about")}
         >
           О проекте
+        </button>
+
+        <button
+          className={currentPage === "quiz" ? "active-nav-btn" : ""}
+          onClick={() => setCurrentPage("quiz")}
+        >
+          Тест
         </button>
       </nav>
 
       <main className="page-content">
-        {currentPage === 'planets' && <Planets />}
-        {currentPage === 'about' && <About />}
+        {currentPage === "home" && <Home />}
+        {currentPage === "planets" && <Planets />}
+        {currentPage === "about" && <About />}
+        {currentPage === "quiz" && <Quiz />}
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
