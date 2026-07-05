@@ -13,6 +13,7 @@ function Navbar(){
                 <li><Link to="/About">О проекте</Link></li>
                 <li><Link to="/Test">Мини тест</Link></li>
                 <li><Link to="/Missons">Миссии</Link></li>
+                <li><link to="/commet" />Кометы</li>
                 
 
             </ul>

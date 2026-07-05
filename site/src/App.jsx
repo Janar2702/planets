@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Quiz from "./pages/Test";
 import Missions from "./pages/Missions";
 import Galaxies from "./pages/Galaxies";
+import Commet from "./pages/commet";
 import "./App.css";
 
 
@@ -55,6 +56,12 @@ function App() {
         >
           Галактики
         </button>
+        <button
+          className={currentPage === "commets" ? "active-nav-btn" : ""}
+          onClick={() => setCurrentPage("commets")}
+        >
+          Кометы 
+        </button>
       </nav>
 
       <main className="page-content">
@@ -64,6 +71,8 @@ function App() {
         {currentPage === "quiz" && <Quiz />}
         {currentPage === "missions" && <Missions />}
         {currentPage === "galaxies" && <Galaxies />}
+         {currentPage === "commets" && <Commet />}
+
 
 
       </main>

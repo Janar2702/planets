@@ -1,0 +1,93 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: #020617;
+  color: white;
+}
+
+/* MAIN BACKGROUND (если вдруг Tailwind не сработает) */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* HERO */
+section {
+  width: 100%;
+}
+
+/* BUTTON */
+button {
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* CARDS */
+.bg-slate-800 {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: 0.3s ease;
+}
+
+.bg-slate-800:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* TEXT */
+.text-gray-300 {
+  color: #cbd5e1;
+}
+
+.text-blue-400 {
+  color: #60a5fa;
+}
+
+/* NASA LOGO */
+img {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+}
+
+/* GRID SPACING */
+.grid {
+  display: grid;
+}
+
+/* FOOTER */
+footer {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* TITLES */
+h1, h2, h3 {
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .px-10 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
