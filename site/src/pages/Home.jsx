@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Home.css";
+import "./styles/Home.css";
 
 function Home(){
     return(
@@ -20,6 +20,7 @@ function Home(){
             </p>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsXIBUwVTLDj77raUUc4Ok7dv_QlWujQPk9uwTfwJmGDJYuLyQu3FFJYY&s=10"
             alt="Космос" width="600px"></img>
+            
         </div>
     )
 }
