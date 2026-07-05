@@ -22,6 +22,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   /* min-height: 100vh; */
   overflow-x: hidden;
+.home body{
+background-image: url("../../assets/planetarium.png")!important;
+background-size: cover;          
+background-position: center;     /* По центру */
+background-repeat: no-repeat;    /* Без повторения */
+background-attachment: fixed;    /* (Необязательно) Фон не двигается при прокрутке */
+}
 }
 
 .app-wrapper {
