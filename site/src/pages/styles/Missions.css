@@ -1,0 +1,184 @@
+:root {
+  --bg-space: #05070f;
+  --bg-card: rgba(13, 17, 30, 0.45);
+  --border-card: rgba(255, 255, 255, 0.05);
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --neon-cyan: #00f2fe;
+  --neon-purple: #4facfe;
+  --neon-pink: #ff007f;
+  --font-space: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.missions {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  font-family: var(--font-space);
+  background-color: var(--bg-space);
+  color: var(--text-main);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.missions-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.missions h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 16px 0;
+}
+
+.missions-header p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.missions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.mission-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-card);
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(800px circle at var(--x, 0px) var(--y, 0px), rgba(0, 242, 254, 0.06), transparent 40%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.mission-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 242, 254, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 242, 254, 0.05);
+}
+
+.missions h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 14px 0;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.mission-card h2 {
+  padding-left: 16px;
+  border-left: 3px solid var(--neon-cyan);
+}
+
+.missions p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.mission-card p {
+  margin: 0 0 24px 0;
+  flex-grow: 1;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #111422;
+}
+
+.missions img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mission-card:hover img {
+  transform: scale(1.04);
+}
+
+.fact-section {
+  background: linear-gradient(135deg, rgba(255, 0, 127, 0.03), rgba(13, 17, 30, 0.45));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 0, 127, 0.15);
+  border-radius: 24px;
+  padding: 40px;
+  margin-top: 60px;
+}
+
+.fact-section h2 {
+  padding-left: 16px;
+  border-left: 3px solid var(--neon-pink);
+}
+
+.fact-section p {
+  margin: 0 0 28px 0;
+}
+
+.fact-section img {
+  height: 380px;
+}
+
+.fact-section:hover {
+  border-color: rgba(255, 0, 127, 0.35);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 0, 127, 0.05);
+}
+
+@media (max-width: 900px) {
+  .missions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .missions {
+    padding: 40px 16px;
+  }
+  .missions h1 {
+    font-size: 2.3rem;
+  }
+  .mission-card {
+    padding: 24px;
+  }
+  .missions img {
+    height: 200px;
+  }
+  .fact-section {
+    padding: 24px;
+  }
+  .fact-section img {
+    height: 220px;
+  }
+}

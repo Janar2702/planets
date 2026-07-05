@@ -1,6 +1,7 @@
-import "./App.css";
+import React from "react";
+import "./styles/Galaxies.css"
 
-function App() {
+function Galaxies() {
   return (
     
     <div className="app">
@@ -61,4 +62,4 @@ function App() {
  <a href= "https://stars.chromeexperiments.com/ "> Перейти на сайт </a>
 
 
-export default App;
+export default Galaxies;
