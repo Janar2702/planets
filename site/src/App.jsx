@@ -7,6 +7,7 @@ import Quiz from "./pages/Test";
 import Missions from "./pages/Missions";
 import "./App.css";
 
+
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
 
