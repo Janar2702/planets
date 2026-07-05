@@ -1,4 +1,7 @@
+import React from "react";
+import "./styles/Missions.css"
 function Missions() {
+  
   return (
     <div className="missions">
       <h1>Космические миссии</h1>
