@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Home from "./pages/Home";
 import Planets from "./pages/Planets";
@@ -49,6 +48,14 @@ function App() {
         >
           Тест
         </button>
+
+        <button
+          className={currentPage === "galaxies" ? "active-nav-btn" : ""}
+          onClick={() => setCurrentPage("galaxies")}
+        >
+          Галактики
+        </button>
+
       </nav>
 
       <main className="page-content">
@@ -57,6 +64,7 @@ function App() {
         {currentPage === "about" && <About />}
         {currentPage === "quiz" && <Quiz />}
         {currentPage === "missions" && <Missions />}
+        {currentPage === "galaxies" && <Galaxies/>}
 
       </main>
     </div>
