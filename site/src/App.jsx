@@ -5,6 +5,7 @@ import Planets from "./pages/Planets";
 import About from "./pages/About";
 import Quiz from "./pages/Test";
 import Missions from "./pages/Missions";
+import Galaxies from "./pages/Galaxies";
 import "./App.css";
 
 
