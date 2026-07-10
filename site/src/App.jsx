@@ -71,7 +71,7 @@ function App() {
         {currentPage === "quiz" && <Quiz />}
         {currentPage === "missions" && <Missions />}
         {currentPage === "galaxies" && <Galaxies />}
-         {currentPage === "commets" && <Commet />}
+         {currentPage === "commets" && <commet />}
 
 
 
