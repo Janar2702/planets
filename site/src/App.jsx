@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Quiz from "./pages/Test";
 import Missions from "./pages/Missions";
 import Galaxies from "./pages/Galaxies";
-import Commet from "./pages/commet";
+import Commet from "./pages/Commet";
 
 import "./App.css";
 
@@ -71,7 +71,7 @@ function App() {
         {currentPage === "quiz" && <Quiz />}
         {currentPage === "missions" && <Missions />}
         {currentPage === "galaxies" && <Galaxies />}
-         {currentPage === "commets" && <commet />}
+        {currentPage === "commets" && <Commet />}
 
 
 

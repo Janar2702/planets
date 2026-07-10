@@ -20,8 +20,7 @@ const comets = [
   {
     name: "Астероид Веста",
     year: "1807",
-    description:
-      "Единственный астероид, который можно увидеть невооружённым глазом.",
+    description: "Единственный астероид, который можно увидеть невооружённым глазом.",
   },
   {
     name: "Метеорит Гоба",
@@ -31,8 +30,7 @@ const comets = [
   {
     name: "Церера",
     year: "1801",
-    description:
-      "Крупнейшая карликовая планета в поясе астероидов.",
+    description: "Крупнейшая карликовая планета в поясе астероидов.",
   },
   {
     name: "Паллада",
@@ -41,15 +39,12 @@ const comets = [
   },
 ];
 
-export default function Comet() {
+export default function Commet() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-slate-900 to-blue-950 text-white">
-      <section className="text-center py-20 px-6">
-        <div className="flex justify-center mb-6">
-          <Rocket size={60} />
-        </div>
 
-        <h1 className="text-5xl font-bold mb-5">Мир Комет ☄️</h1>
+      <section className="text-center py-20 px-6">
+        <h1 className="text-5xl font-bold mb-5">☄️ Мир Комет</h1>
 
         <p className="max-w-2xl mx-auto text-gray-300 text-lg">
           Исследуйте загадочные космические объекты, путешествующие через
@@ -62,8 +57,9 @@ export default function Comet() {
       </section>
 
       <section className="grid md:grid-cols-3 gap-6 px-10 py-12">
+
         <div className="bg-slate-800 p-6 rounded-2xl">
-          <Star className="mb-3" />
+          <div style={{ fontSize: "40px", marginBottom: "15px" }}></div>
           <h3 className="font-bold text-xl mb-2">Что такое комета?</h3>
           <p className="text-gray-300">
             Комета — небесное тело, состоящее из льда, пыли и камней.
@@ -71,7 +67,7 @@ export default function Comet() {
         </div>
 
         <div className="bg-slate-800 p-6 rounded-2xl">
-          <Orbit className="mb-3" />
+          <div style={{ fontSize: "40px", marginBottom: "15px" }}></div>
           <h3 className="font-bold text-xl mb-2">Орбита</h3>
           <p className="text-gray-300">
             Кометы движутся вокруг Солнца по сильно вытянутым орбитам.
@@ -79,12 +75,13 @@ export default function Comet() {
         </div>
 
         <div className="bg-slate-800 p-6 rounded-2xl">
-          <Rocket className="mb-3" />
+          <div style={{ fontSize: "40px", marginBottom: "15px" }}></div>
           <h3 className="font-bold text-xl mb-2">Исследования</h3>
           <p className="text-gray-300">
             Космические аппараты изучают состав и строение комет.
           </p>
         </div>
+
       </section>
 
       <section className="px-10 py-12">
@@ -98,29 +95,28 @@ export default function Comet() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
+
           <div className="bg-slate-800 p-6 rounded-2xl">
             <h3 className="font-bold text-xl mb-2">Что такое NASA?</h3>
             <p className="text-gray-300">
-              NASA — космическое агентство США, занимающееся исследованиями
-              космоса.
+              NASA — космическое агентство США, занимающееся исследованиями космоса.
             </p>
           </div>
 
           <div className="bg-slate-800 p-6 rounded-2xl">
             <h3 className="font-bold text-xl mb-2">Миссии</h3>
             <p className="text-gray-300">
-              Агентство отправляет миссии к Луне, Марсу и другим объектам
-              Солнечной системы.
+              Агентство отправляет миссии к Луне, Марсу и другим объектам Солнечной системы.
             </p>
           </div>
 
           <div className="bg-slate-800 p-6 rounded-2xl">
             <h3 className="font-bold text-xl mb-2">Достижения</h3>
             <p className="text-gray-300">
-              Среди известных проектов — Apollo, Hubble, Curiosity и
-              Perseverance.
+              Среди известных проектов — Apollo, Hubble, Curiosity и Perseverance.
             </p>
           </div>
+
         </div>
       </section>
 
@@ -144,9 +140,9 @@ export default function Comet() {
       </section>
 
       <footer className="text-center py-8 text-gray-400 border-t border-slate-700">
-        Космос — бесконечная загадка, которую человечество продолжает
-        исследовать.
+        Космос — бесконечная загадка, которую человечество продолжает исследовать.
       </footer>
+
     </div>
   );
 }
