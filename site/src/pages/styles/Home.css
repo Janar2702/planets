@@ -1,97 +1,78 @@
-/* Сброс */
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
+    background: #050816;
 }
 
-/* Корневые элементы */
-html,
-body,
-#root {
-    width: 100%;
-    min-height: 100%;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0E2181;
-    color: white;
-    overflow-x: hidden;
-}
-
-/* Главная секция */
 .home {
-    width: 100%;
     min-height: 100vh;
-
-    background-image: url("../../assets/planetarium.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-    /* Если будут проблемы на мобильных — убери эту строку */
-    background-attachment: fixed;
-
+    background: url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1600") center/cover no-repeat;
     display: flex;
-    flex-direction: column;
-}
-
-/* Главная секция */
-
-
-.home h1 {
-  color: #7fd8ff;
-  font-size: 40px;
-  margin-bottom: 25px;
-  text-shadow: 0 0 10px #4763EB;
-}
-
-.home p {
-  font-size: 20px;
-  line-height: 1.8;
-  color: beige;
-  margin-bottom: 20px;
-}
-
-.home img {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 20px;
-  margin-top: 25px;
-  box-shadow: 0 0 25px #4763EB;
-  transition: transform 0.3s ease;
-}
-
-/* Аккуратное и плавное увеличение картинки при наведении */
-.home img:hover {
-  transform: scale(1.05);
-}
-
- .contentBox {
-    width: 90%;
-    max-width: 1200px;
-    margin: 80px auto;
+    justify-content: center;
+    align-items: center;
     padding: 40px;
-
-    background: rgba(15, 25, 45, 0.65);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 25px;
-
-    box-shadow:
-        0 0 30px rgba(0, 153, 255, 0.25),
-        0 0 80px rgba(75, 0, 130, 0.2);
-
-    color: white;
-    transition: .4s ease;
 }
 
-.contentBox:hover {
-    transform: translateY(-8px);
-    box-shadow:
-        0 0 45px rgba(0, 183, 255, 0.4),
-        0 0 100px rgba(140, 0, 255, 0.3);
+.contentBox {
+    width: 900px;
+    background-color: rgba(3, 12, 39, 0.9);
+    border: 2px solid #4b6cb7;
+    border-radius: 15px;
+    padding: 35px;
+    color: white;
+}
+
+.contentBox h1 {
+    text-align: center;
+    color: #66d9ff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contentBox h2 {
+    text-align: center;
+    color: #d5e8ff;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.contentBox p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.contentBox img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.contentBox img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .contentBox {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contentBox h1 {
+        font-size: 30px;
+    }
+
+    .contentBox h2 {
+        font-size: 20px;
+    }
+
+    .contentBox p {
+        font-size: 16px;
+    }
 }
