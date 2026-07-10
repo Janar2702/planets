@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Home from "./pages/Home";
 import Planets from "./pages/Planets";
@@ -7,6 +6,7 @@ import Quiz from "./pages/Test";
 import Missions from "./pages/Missions";
 import Galaxies from "./pages/Galaxies";
 import Commet from "./pages/commet";
+
 import "./App.css";
 
 

@@ -1,0 +1,92 @@
+.galaxies {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(15, 20, 45, 0.85);
+    border-radius: 25px;
+    border: 2px solid rgba(0, 191, 255, 0.25);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.25);
+    color: white;
+}
+
+.galaxies h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #7dd3fc;
+    text-shadow: 0 0 12px rgba(0, 191, 255, 0.8);
+}
+
+.galaxies h2 {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-left: 5px solid #00bfff;
+    color: #ffd54f;
+    font-size: 2rem;
+}
+
+.galaxies p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #e5e7eb;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.galaxies img {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    margin: 25px auto 40px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 191, 255, 0.35);
+    box-shadow: 0 0 25px rgba(0, 191, 255, 0.3);
+    transition: all 0.4s ease;
+}
+
+.galaxies img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgba(0, 191, 255, 0.7);
+}
+
+.galaxies ul {
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.galaxies li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #f1f5f9;
+}
+
+.galaxies li::marker {
+    color: #00bfff;
+}
+
+@media (max-width: 768px) {
+    .galaxies {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .galaxies h1 {
+        font-size: 2.3rem;
+    }
+
+    .galaxies h2 {
+        font-size: 1.6rem;
+    }
+
+    .galaxies p,
+    .galaxies li {
+        font-size: 16px;
+    }
+
+    .galaxies img {
+        width: 100%;
+    }
+}
