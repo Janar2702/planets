@@ -46,6 +46,7 @@ function About() {
         каменистые планеты или только ледяные гиганты), чтобы изучать именно то, что интересно вам в данный момент.
       </li>
     </ul>
+  
   </section>
 
   <section className="about-mission">
@@ -57,6 +58,48 @@ function About() {
     </p>
   </section>
 
+<section className="about-facts-section" style={{ marginTop: "40px" }}>
+  <h2>Удивительные факты о космосе</h2>
+  
+  <div className="fact-card" style={{ marginBottom: "30px", borderLeft: "5px solid #ffde21", paddingLeft: "15px" }}>
+    <h3>Космический факт №1</h3>
+    <p><strong>Год короче дня:</strong> На Венере один полный оборот вокруг своей оси (день) занимает 243 земных дня, в то время как оборот вокруг Солнца (год) она успевает сделать за 225 земных дней.</p>
+  </div>
+
+  <div className="fact-card" style={{ marginBottom: "30px", borderLeft: "5px solid #ffde21", paddingLeft: "15px" }}>
+    <h3>Космический факт №2</h3>
+    <p><strong>Абсолютная тишина:</strong> В космосе нет звуков. Поскольку там вакуум и нет атмосферы, звуковым волнам просто не в чем распространяться.</p>
+  </div>
+
+  <div className="fact-card" style={{ marginBottom: "30px", borderLeft: "5px solid #ffde21", paddingLeft: "15px" }}>
+    <h3>Космический факт №3</h3>
+    <p><strong>Вечные следы:</strong> Следы астронавтов миссии "Аполлон" останутся на Луне на миллионы лет. Там нет ветра и атмосферы, которые могли бы их стереть.</p>
+  </div>
+
+  <div className="fact-card" style={{ marginBottom: "30px", borderLeft: "5px solid #ffde21", paddingLeft: "15px" }}>
+    <h3>Космический факт №4</h3>
+    <p><strong>Тяжеловес системы:</strong> Наше Солнце настолько огромно, что на него приходится 99,86% всей массы нашей Солнечной системы.</p>
+  </div>
+
+  <div className="fact-card" style={{ marginBottom: "30px", borderLeft: "5px solid #ffde21", paddingLeft: "15px" }}>
+    <h3>Космический факт №5</h3>
+    <p><strong>Невероятная плотность:</strong> Нейтронные звезды настолько плотные, что всего одна чайная ложка их вещества весила бы около 6 миллиардов тонн.</p>
+  </div>
+
+  <div className="fact-card" style={{ marginBottom: "30px", borderLeft: "5px solid #ffde21", paddingLeft: "15px" }}>
+    <h3>Космический факт №6</h3>
+    <p><strong>Алмазная планета:</strong> В 40 световых годах от нас находится экзопланета 55 Рака e. Она может на треть состоять из настоящих алмазов.</p>
+  </div>
+</section>
+
+      <li>
+        <strong>Интересные и полезные факты:</strong> Все представленные факты были тщательно отобраны и проверена.
+        Вся информация взята из официальных публикаций между народныз агентств(таких как NASA и ESA).
+        Мы отобрали только интересные и поразительные факты про космос.
+      </li>
+
+  <section className="about-mission"></section>
+
   <footer className="about-footer">
     <p>
       Вселенная простирается на миллиарды световых лет, и каждый её уголок хранит невероятные секреты. 
@@ -65,6 +108,8 @@ function About() {
     </p>
   </footer>
 </div>
+
+
 
     </>
   )
