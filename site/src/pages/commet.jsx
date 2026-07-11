@@ -51,13 +51,16 @@ export default function Commet() {
           Солнечную систему.
         </p>
 
-        <button className="mt-8 bg-blue-600 px-6 py-3 rounded-xl hover:bg-blue-700 transition">
+      
+        <a 
+          href="#comets-list" 
+          className="inline-block mt-8 bg-blue-600 px-6 py-3 rounded-xl hover:bg-blue-700 transition"
+        >
           Узнать больше
-        </button>
+        </a>
       </section>
 
       <section className="grid md:grid-cols-3 gap-6 px-10 py-12">
-
         <div className="bg-slate-800 p-6 rounded-2xl">
           <div style={{ fontSize: "40px", marginBottom: "15px" }}></div>
           <h3 className="font-bold text-xl mb-2">Что такое комета?</h3>
@@ -81,7 +84,6 @@ export default function Commet() {
             Космические аппараты изучают состав и строение комет.
           </p>
         </div>
-
       </section>
 
       <section className="px-10 py-12">
@@ -95,7 +97,6 @@ export default function Commet() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-
           <div className="bg-slate-800 p-6 rounded-2xl">
             <h3 className="font-bold text-xl mb-2">Что такое NASA?</h3>
             <p className="text-gray-300">
@@ -116,11 +117,11 @@ export default function Commet() {
               Среди известных проектов — Apollo, Hubble, Curiosity и Perseverance.
             </p>
           </div>
-
         </div>
       </section>
 
-      <section className="px-10 py-12">
+      {/* ШАГ 2: Добавляем id="comets-list" к целевой секции */}
+      <section id="comets-list" className="px-10 py-12">
         <h2 className="text-3xl font-bold text-center mb-10">
           Известные кометы и малые тела
         </h2>
